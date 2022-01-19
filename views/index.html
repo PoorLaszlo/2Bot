@@ -200,7 +200,7 @@
           <h2 class="title text-center" style="background: rgba(255, 255, 255, 0.35);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
-          border-top-left-radius: 10px; border-top-right-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); padding: 15px; margin-bottom: 0;">Parancsok</h2>
+          border-top-left-radius: 10px; border-top-right-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); padding: 15px; margin-bottom: 0; overflow-x: auto;">Parancsok</h2>
           <table
             class="table"
             style="
@@ -218,7 +218,7 @@
                     color: white;
                     -webkit-background-clip: text;
                     background-clip: text;
-                    text-decoration: none;
+                    text-decoration: none; overflow-x: auto;
                   "
                 >
                   Parancs
@@ -229,7 +229,7 @@
                     color: white;
                     -webkit-background-clip: text;
                     background-clip: text;
-                    text-decoration: none;
+                    text-decoration: none; overflow-x: auto;
                   "
                 >
                   Rövidítés
@@ -240,7 +240,7 @@
                     color: white;
                     -webkit-background-clip: text;
                     background-clip: text;
-                    text-decoration: none;
+                    text-decoration: none; overflow-x: auto;
                   "
                 >
                   Használat
@@ -251,7 +251,7 @@
                     color: white;
                     -webkit-background-clip: text;
                     background-clip: text;
-                    text-decoration: none;
+                    text-decoration: none; overflow-x: auto;
                   "
                 >
                   Leírás
@@ -525,10 +525,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); margin: 30px;">OAuth Dashboard</a
         data.commands.forEach((cmd) => {
           $("#commands-body").append(`
 <tr>
-  <th scope="row">${cmd.name}</th>
-  <td>${cmd.aliases ? cmd.aliases.join(", ") : "Nincs"}</td>
-  <td>${cmd.usage ? cmd.usage : "Nincs"}</td>
-  <td>${cmd.description ? cmd.description : "Nincs"}</td>
+  <th style="overflow-x: auto;" scope="row">${cmd.name}</th>
+  <td style="overflow-x: auto;" >${cmd.aliases ? cmd.aliases.join(", ") : "Nincs"}</td>
+  <td style="overflow-x: auto;" >${cmd.usage ? cmd.usage : "Nincs"}</td>
+  <td style="overflow-x: auto;" >${cmd.description ? cmd.description : "Nincs"}</td>
 </tr>
 `);
         });
