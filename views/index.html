@@ -98,7 +98,7 @@
                 >Parancsok</a
               >
             </div>
-            <a href="/dashboard" class="btn" type="button">
+            <a href="/dashboard" class="btn btn2" type="button">
               OAuth Dashboard
             </a>
           </div>
@@ -468,16 +468,15 @@
     }
 
     .footer {
-      padding: 32px 0;
-      position: absolute;
-      width: 100%;
-      background-color: red;
-      color: white;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.35);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 32px 0;
+      position: absolute;
+      width: 100%;
+      color: white;
+      text-align: center;
     }
 
     .footer p {
@@ -500,6 +499,14 @@
     .btn {
       color: rgb(94, 94, 94);
       transition: 0.5s;
+    }
+    .btn2 {
+      color: white !important;
+      transition: 0.5s !important;
+    }
+    .btn2:hover {
+      color: rgb(38, 220, 226) !important;
+      transition: 0.5s !important;
     }
 
     .btn:hover {
