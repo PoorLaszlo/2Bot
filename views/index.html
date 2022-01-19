@@ -45,8 +45,8 @@
           width: 100%;
           z-index: 100;
           background: rgba(255, 255, 255, 0.35);
-          backdrop-filter: blur(50%);
-          -webkit-backdrop-filter: blur(50%);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
           border: 1px solid rgba(255, 255, 255, 0.18);
           height: 10%;
         "
@@ -125,8 +125,8 @@
           id="hero"
           class="text-center"
           style="position: relative; top: 50%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.35);
-          backdrop-filter: blur(50%);
-          -webkit-backdrop-filter: blur(50%);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
           border: 1px solid rgba(255, 255, 255, 0.18); padding: 20px;"
         >
           <h1>2Bot 24/7</h1>
@@ -144,9 +144,9 @@
             <div class="col-md-10 col-lg-8">
               <div class="header-section">
                 <h2 class="title-features" style="background: rgba(255, 255, 255, 0.35);
-                backdrop-filter: blur(50%);
-                -webkit-backdrop-filter: blur(50%);
-                border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">Klafa <span>Jellemzők</span></h2>
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px; padding: 15px;">Klafa <span>Jellemzők</span></h2>
               </div>
             </div>
           </div>
@@ -199,13 +199,16 @@
       <!-- Commands -->
       <div class="commands" id="commands">
         <div class="container">
-          <h2 class="title text-center">Parancsok</h2>
+          <h2 class="title text-center" style="background: rgba(255, 255, 255, 0.35);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-radius: 10px; padding: 15px;">Parancsok</h2>
           <table
             class="table"
             style="
               background: rgba(255, 255, 255, 0.35);
-              backdrop-filter: blur(50%);
-              -webkit-backdrop-filter: blur(50%);
+              backdrop-filter: blur(20px);
+              -webkit-backdrop-filter: blur(20px);
               border-radius: 10px;
             "
           >
@@ -214,13 +217,7 @@
                 <th
                   scope="col"
                   style="
-                    background: linear-gradient(
-                      to right,
-                      #8a2387,
-                      #e94057,
-                      #f27121
-                    );
-                    color: transparent;
+                    color: white;
                     -webkit-background-clip: text;
                     background-clip: text;
                     text-decoration: none;
@@ -231,13 +228,7 @@
                 <th
                   scope="col"
                   style="
-                    background: linear-gradient(
-                      to right,
-                      #8a2387,
-                      #e94057,
-                      #f27121
-                    );
-                    color: transparent;
+                    color: white;
                     -webkit-background-clip: text;
                     background-clip: text;
                     text-decoration: none;
@@ -248,13 +239,7 @@
                 <th
                   scope="col"
                   style="
-                    background: linear-gradient(
-                      to right,
-                      #8a2387,
-                      #e94057,
-                      #f27121
-                    );
-                    color: transparent;
+                    color: white;
                     -webkit-background-clip: text;
                     background-clip: text;
                     text-decoration: none;
@@ -265,13 +250,7 @@
                 <th
                   scope="col"
                   style="
-                    background: linear-gradient(
-                      to right,
-                      #8a2387,
-                      #e94057,
-                      #f27121
-                    );
-                    color: transparent;
+                    color: white;
                     -webkit-background-clip: text;
                     background-clip: text;
                     text-decoration: none;
@@ -354,7 +333,7 @@
       color: white;
     }
 
-    .td {
+    td, th {
       border-bottom: none !important;
       border-top: 2px solid white !important;
     }
@@ -391,6 +370,7 @@
       -webkit-background-clip: text;
       background-clip: text;
       text-decoration: none;
+      margin-bottom: 0;
     }
 
     .section-features .header-section {
@@ -438,8 +418,8 @@
     .section-features .single-service {
       margin-top: 40px;
       background: rgba(255, 255, 255, 0.35);
-      backdrop-filter: blur(50%);
-      -webkit-backdrop-filter: blur(50%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
     }
@@ -492,8 +472,8 @@
       color: white;
       text-align: center;
       background: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(50%);
-      -webkit-backdrop-filter: blur(50%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
@@ -516,8 +496,8 @@
 
         $("#hero").append(`
             <a href="/dashboard" class="btn" type="button" style="background: rgba( 255, 255, 255, 0.35 );
-backdrop-filter: blur( 50% );
--webkit-backdrop-filter: blur( 50% );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
 color: white;
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 ); margin: 30px;">OAuth Dashboard</a>`);
