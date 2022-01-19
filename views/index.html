@@ -39,7 +39,6 @@
       <nav
         class="navbar"
         style="
-          overflow: hidden;
           position: fixed; /* Set the navbar to fixed position */
           top: 0; /* Position the navbar at the top of the page */
           width: 100%;
@@ -48,7 +47,6 @@
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
           border: 1px solid rgba(255, 255, 255, 0.18);
-          height: 10%;
         "
       >
         <div class="container-fluid">
@@ -198,7 +196,7 @@
 
       <!-- Commands -->
       <div class="commands" id="commands">
-        <div class="container">
+        <div class="container" style="overflow-x: auto;">
           <h2 class="title text-center" style="background: rgba(255, 255, 255, 0.35);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
@@ -340,7 +338,7 @@
 
     @media only screen and (max-width: 630px) {
       .navbar-toggler {
-        display: inherit;
+        display: initial;
       }
 
       .nav-links {
