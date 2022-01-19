@@ -197,20 +197,19 @@
       <!-- Commands -->
       <div class="commands" id="commands">
         <div class="container" style="width: 85%; overflow:auto; padding: 0;">
-          <h2 class="title text-center" style="background: rgba(255, 255, 255, 0.35);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
-          border-top-left-radius: 10px; border-top-right-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); padding: 15px; margin-bottom: 0; ">Parancsok</h2>
           <table
             class="table"
             style="
               background: rgba(255, 255, 255, 0.35);
               backdrop-filter: blur(20px);
               -webkit-backdrop-filter: blur(20px);
-              border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18);
+              border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18);
             "
           >
             <thead>
+              <tr>
+                <th colspan="4" class="title text-center" style="padding: 15px;">Parancsok</th>
+              </tr>
               <tr>
                 <th
                   scope="col"
@@ -333,7 +332,6 @@
 
     td, th {
       border-bottom: none !important;
-      border-top: 2px solid white !important;
     }
 
     @media only screen and (max-width: 630px) {
