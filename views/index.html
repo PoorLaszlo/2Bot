@@ -89,7 +89,6 @@
                 class="nav-link active"
                 aria-current="page"
                 href="/"
-                style="color: white"
                 >Kezdőlap</a
               >
               <a class="nav-link" href="#features"
@@ -203,14 +202,14 @@
           <h2 class="title text-center" style="background: rgba(255, 255, 255, 0.35);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
-          border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 15px;">Parancsok</h2>
+          border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 15px; margin-bottom: 0;">Parancsok</h2>
           <table
             class="table"
             style="
               background: rgba(255, 255, 255, 0.35);
               backdrop-filter: blur(20px);
               -webkit-backdrop-filter: blur(20px);
-              border-radius: 10px;
+              border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
             "
           >
             <thead>
@@ -490,12 +489,22 @@
 
     a {
       color: white;
-      transition: 2s;
+      transition: 1s;
     }
 
     a:hover {
-      color: aqua;
-      transition: 2s;
+      color: blueviolet;
+      transition: 1s;
+    }
+
+    .btn {
+      color: white;
+      transition: 1s;
+    }
+
+    .btn:hover {
+      color: blueviolet;
+      transition: 1s;
     }
   </style>
   <script>
