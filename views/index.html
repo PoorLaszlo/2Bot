@@ -45,8 +45,8 @@
           width: 100%;
           z-index: 100;
           background: rgba(255, 255, 255, 0.35);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(50%);
+          -webkit-backdrop-filter: blur(50%);
           border: 1px solid rgba(255, 255, 255, 0.18);
           height: 10%;
         "
@@ -65,11 +65,11 @@
             <img
               src="/logo.gif"
               alt="Music Bot Logo"
-              width="50"
-              height="50"
+              width="30"
+              height="30"
               class="d-inline-block align-text-top"
             />
-            <h1 style="margin-left: 40px;">2Bot</h1>
+            <h3 style="margin-left: 40px;">2Bot</h3>
           </a>
           <button
             class="navbar-toggler"
@@ -125,9 +125,9 @@
           id="hero"
           class="text-center"
           style="position: relative; top: 50%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.35);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
-          border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;"
+          backdrop-filter: blur(50%);
+          -webkit-backdrop-filter: blur(50%);
+          border: 1px solid rgba(255, 255, 255, 0.18); padding: 20px;"
         >
           <h1>2Bot 24/7</h1>
           <h2>
@@ -144,8 +144,8 @@
             <div class="col-md-10 col-lg-8">
               <div class="header-section">
                 <h2 class="title-features" style="background: rgba(255, 255, 255, 0.35);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(50%);
+                -webkit-backdrop-filter: blur(50%);
                 border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;">Klafa <span>Jellemzők</span></h2>
               </div>
             </div>
@@ -204,8 +204,8 @@
             class="table"
             style="
               background: rgba(255, 255, 255, 0.35);
-              backdrop-filter: blur(20px);
-              -webkit-backdrop-filter: blur(20px);
+              backdrop-filter: blur(50%);
+              -webkit-backdrop-filter: blur(50%);
               border-radius: 10px;
             "
           >
@@ -327,7 +327,7 @@
     }
 
     body {
-      background: url(/background.png) no-repeat center center fixed; 
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/background.png) no-repeat center center fixed;
       color: #fff;
       font-family: "Euclid Circular B Medium", Poppins;
     }
@@ -354,7 +354,7 @@
       color: white;
     }
 
-    .tr {
+    .td {
       border-bottom: none !important;
       border-top: 2px solid white !important;
     }
@@ -438,9 +438,8 @@
     .section-features .single-service {
       margin-top: 40px;
       background: rgba(255, 255, 255, 0.35);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(9px);
-      -webkit-backdrop-filter: blur(9px);
+      backdrop-filter: blur(50%);
+      -webkit-backdrop-filter: blur(50%);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
     }
@@ -493,8 +492,8 @@
       color: white;
       text-align: center;
       background: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(50%);
+      -webkit-backdrop-filter: blur(50%);
       border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
@@ -517,11 +516,11 @@
 
         $("#hero").append(`
             <a href="/dashboard" class="btn" type="button" style="background: rgba( 255, 255, 255, 0.35 );
-backdrop-filter: blur( 9px );
--webkit-backdrop-filter: blur( 9px );
+backdrop-filter: blur( 50% );
+-webkit-backdrop-filter: blur( 50% );
 color: white;
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );">OAuth Dashboard</a>`);
+border: 1px solid rgba( 255, 255, 255, 0.18 ); margin: 30px;">OAuth Dashboard</a>`);
       });
 
       $.get("/api/commands", (data) => {
