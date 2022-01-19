@@ -195,8 +195,8 @@
       <!-- End Features -->
 
       <!-- Commands -->
-      <div class="commands" id="commands" style="width: 85%;">
-        <div class="container">
+      <div class="commands" id="commands">
+        <div class="container" style="width: 85%; overflow:auto; padding: 0;">
           <h2 class="title text-center" style="background: rgba(255, 255, 255, 0.35);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
@@ -207,7 +207,7 @@
               background: rgba(255, 255, 255, 0.35);
               backdrop-filter: blur(20px);
               -webkit-backdrop-filter: blur(20px);
-              border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); overflow-x: auto;
+              border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18);
             "
           >
             <thead>
@@ -338,7 +338,8 @@
 
     @media only screen and (max-width: 630px) {
       .navbar-toggler {
-        display: initial;
+        display: inherit;
+        color:white;
       }
 
       .nav-links {
