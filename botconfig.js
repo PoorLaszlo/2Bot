@@ -8,7 +8,7 @@ module.exports = {
     ClientID: process.env['clientId'] || "", //Discord Client ID
     ClientSecret: process.env['clientSecret'] || "", //Discord Client Secret
     Scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
-    ServerDeafen: false, //If you want bot to stay deafened
+    ServerDeafen: true, //If you want bot to stay deafened
     DefaultVolume: 100, //Sets the default volume of the bot, You can change this number anywhere from 1 to 100
     CallbackURL: "/api/callback", //Discord API Callback url. Do not touch it if you don't know what you are doing. All you need to change for website to work is on line 20.
     "24/7": false, //If you want the bot to be stay in the vc 24/7
@@ -17,11 +17,11 @@ module.exports = {
       "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif", //URL of all embed author icons | Dont edit unless you dont need that Music CD Spining
     EmbedColor: "RANDOM", //Color of most embeds | Dont edit unless you want a specific color instead of a random one each time
     Permissions: 8, //Bot Inviting Permissions
-    Website: "https://2bot.poorlaszlo.repl.co", //Website where it is hosted at includes http or https || Use "0.0.0.0" if you using Heroku || Do not include /api/callback. Just the website url. I.e. "https://foo.bar"
+    Website: "https://2bot.up.railway.app", //Website where it is hosted at includes http or https || Use "0.0.0.0" if you using Heroku || Do not include /api/callback. Just the website url. I.e. "https://foo.bar"
     
     Presence: {
       status: "online", // You can show online, idle, and dnd
-      name: "!help for REVEALING OUTFIT", // The message shown
+      name: "!help for NISHIKIYAMA CRY SESSION", // The message shown
       type: "PLAYING", // PLAYING, WATCHING, LISTENING, STREAMING
     },
   
