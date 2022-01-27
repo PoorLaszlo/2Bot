@@ -5,11 +5,13 @@ const levels = {
   low: 0.2,
   medium: 0.3,
   high: 0.35,
+  coom: 0.5,
+  extremecoom: 0.7,
 };
 module.exports = {
   name: "bassboost",
   description: "Enables bass boosting audio effect",
-  usage: "<none|low|medium|high>",
+  usage: "<none|low|medium|high|coom|extremecoom>",
   permissions: {
     channel: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS"],
     member: [],
@@ -46,7 +48,7 @@ module.exports = {
     if (!args[0])
       return client.sendTime(
         message.channel,
-        "**Please provide a bassboost level. \nAvailable Levels:** `none`, `low`, `medium`, `high`"
+        "**Please provide a bassboost level. \nAvailable Levels:** `none`, `low`, `medium`, `high`, `coom`, `extremecoom`"
       ); //if the user do not provide args [arguments]
 
     let level = "none";
@@ -68,7 +70,7 @@ module.exports = {
     options: [
       {
         name: "level",
-        description: `Please provide a bassboost level. Available Levels: low, medium, high, or none`,
+        description: `Please provide a bassboost level. Available Levels: low, medium, high, coom, extremecoom, or none`,
         value: "[level]",
         type: 3,
         required: true,
@@ -88,6 +90,8 @@ module.exports = {
         low: 0.2,
         medium: 0.3,
         high: 0.35,
+        coom: 0.5,
+        extremecoom: 0.7,
       };
 
       let player = await client.Manager.get(interaction.guild_id);
@@ -115,7 +119,7 @@ module.exports = {
       if (!args)
         return client.sendTime(
           interaction,
-          "**Please provide a bassboost level. \nAvailable Levels:** `none`, `low`, `medium`, `high`"
+          "**Please provide a bassboost level. \nAvailable Levels:** `none`, `low`, `medium`, `high`, `coom`, `extremecoom`"
         ); //if the user do not provide args [arguments]
 
       let level = "none";
