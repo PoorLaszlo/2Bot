@@ -36,7 +36,7 @@ module.exports = {
         }help [Command] | Have a nice day!`
       ).setDescription(`${Commands.join("\n")}
   
-  Discord Music Bot Version: v${require("../package.json").version}
+  2Bot Version: v${require("../package.json").version}
   [✨ Support Server](${
     client.botconfig.SupportServer
   }) | [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot) | [Dashboard](${client.botconfig.Website}) | By Kókai Tiktok Patrik`);
@@ -120,7 +120,7 @@ module.exports = {
           }help [Command] | Have a nice day!`
         ).setDescription(`${Commands.join("\n")}
   
-  Discord Music Bot Version: v${require("../package.json").version}
+  2Bot Version: v${require("../package.json").version}
   [✨ Support Server](${
     client.botconfig.SupportServer
   }) | [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot) | [Dashboard](${client.botconfig.Website}) | By Kókai Tiktok Patrik`);
