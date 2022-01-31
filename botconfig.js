@@ -33,7 +33,7 @@ module.exports = {
       pass: "2bcoom",
       secure: true, // Set this to true if the lavalink uses SSL or you're hosting lavalink on repl.it
     },
-  
+    //
     //Please go to https://developer.spotify.com/dashboard/
     Spotify: {
       ClientID: process.env['spotifyClientId'] || "", //Spotify Client ID
