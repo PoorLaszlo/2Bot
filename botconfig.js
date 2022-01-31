@@ -29,11 +29,10 @@ module.exports = {
     Lavalink: {
       id: "Main",
       host: "2bot-lavalink.up.railway.app",
-      port: 443, // The port that lavalink is listening to. This must be a number!
+      port: 5896, // The port that lavalink is listening to. This must be a number!
       pass: "2bcoom",
       secure: false, // Set this to true if the lavalink uses SSL or you're hosting lavalink on repl.it
     },
-    //
     //Please go to https://developer.spotify.com/dashboard/
     Spotify: {
       ClientID: process.env['spotifyClientId'] || "", //Spotify Client ID
