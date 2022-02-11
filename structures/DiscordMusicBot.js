@@ -122,7 +122,12 @@ class DiscordMusicBot extends Client {
         autoResolve: true,
         useSpotifyMetadata: true,
       },
-      nodes,
+      [{host:"lavalink.scpcl.site",
+      port:443,
+      pass:"lvserver",
+      id:"scpcl",
+      secure: true,}],
+      
     );
 
     this.Manager = new Manager({
@@ -131,7 +136,11 @@ class DiscordMusicBot extends Client {
         new apple(),
         new facebook(),
       ],
-      nodesErela,
+      nodes: [{host:"lavalink.scpcl.site",
+      port:443,
+      pass:"lvserver",
+      identifier:"scpcl",
+      secure: true,}],
       send(id, payload) {
         const guild = client.guilds.cache.get(id);
         if (guild) guild.shard.send(payload);
