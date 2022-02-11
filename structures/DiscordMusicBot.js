@@ -111,7 +111,8 @@ class DiscordMusicBot extends Client {
 
     //because not worked lol ;-;
     const client = this;
-
+    const nodes = this.botconfig.Lavalink;
+    const nodesErela = this.botconfig.LavalinkErela;
     this.Lavasfy = new LavasfyClient(
       {
         clientID: this.botconfig.Spotify.ClientID,
@@ -121,15 +122,7 @@ class DiscordMusicBot extends Client {
         autoResolve: true,
         useSpotifyMetadata: true,
       },
-      [
-        {
-          id: this.botconfig.Lavalink.id,
-          host: this.botconfig.Lavalink.host,
-          port: this.botconfig.Lavalink.port,
-          password: this.botconfig.Lavalink.pass,
-          secure: this.botconfig.Lavalink.secure,
-        },
-      ]
+      nodes,
     );
 
     this.Manager = new Manager({
@@ -138,15 +131,7 @@ class DiscordMusicBot extends Client {
         new apple(),
         new facebook(),
       ],
-      nodes: [
-        {
-          identifier: this.botconfig.Lavalink.id,
-          host: this.botconfig.Lavalink.host,
-          port: this.botconfig.Lavalink.port,
-          password: this.botconfig.Lavalink.pass,
-          secure: this.botconfig.Lavalink.secure,
-        },
-      ],
+      nodesErela,
       send(id, payload) {
         const guild = client.guilds.cache.get(id);
         if (guild) guild.shard.send(payload);
@@ -161,6 +146,9 @@ class DiscordMusicBot extends Client {
         )
       )
       .on("trackStart", async (player, track) => {
+        var now = new Date();
+        var hour = now.getUTCHours();
+        var minute = now.getUTCMinutes();
         this.SongsPlayed++;
         let TrackStartedEmbed = new MessageEmbed()
           .setAuthor(`Now playing ♪`, this.botconfig.IconURL)
@@ -174,8 +162,8 @@ class DiscordMusicBot extends Client {
             })}\``,
             true
           )
-          .setColor(this.botconfig.EmbedColor);
-        //.setFooter("Started playing at");
+          .setColor(this.botconfig.EmbedColor)
+          .setFooter("Started playing at: ", hour, " : ", minute);
         let NowPlaying = await client.channels.cache
           .get(player.textChannel)
           .send(TrackStartedEmbed);

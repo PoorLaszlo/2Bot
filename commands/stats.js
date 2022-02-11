@@ -89,6 +89,18 @@ module.exports = {
 
       return message.channel.send(embed);
     });
+    let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
+    if (!CheckNode || !CheckNode.connected) {
+      return client.sendTime(
+        message.channel,
+        "❌ | **Lavalink node not connected**"
+      );
+    } else {
+      return client.sendTime(
+        message.channel,
+        "✅ | **Lavalink node connected**"
+      );
+    }
   },
   SlashCommand: {
     /**
@@ -168,6 +180,18 @@ module.exports = {
 
         return interaction.send(embed);
       });
+      let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
+      if (!CheckNode || !CheckNode.connected) {
+        return client.sendTime(
+          message.channel,
+          "❌ | **Lavalink node not connected**"
+        );
+      } else {
+        return client.sendTime(
+          message.channel,
+          "✅ | **Lavalink node connected**"
+        );
+      }
     },
   },
 };

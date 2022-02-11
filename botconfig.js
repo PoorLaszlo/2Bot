@@ -14,7 +14,7 @@ module.exports = {
     "24/7": false, //If you want the bot to be stay in the vc 24/7
     CookieSecret: process.env['pass'], //A Secret like a password
     IconURL:
-      "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif", //URL of all embed author icons | Dont edit unless you dont need that Music CD Spining
+      "https://raw.githubusercontent.com/PoorLaszlo/2Bot/master/assets/logo.gif", //URL of all embed author icons | Dont edit unless you dont need that Music CD Spining
     EmbedColor: "RANDOM", //Color of most embeds | Dont edit unless you want a specific color instead of a random one each time
     Permissions: 8, //Bot Inviting Permissions
     Website: "https://2bot.up.railway.app", //Website where it is hosted at includes http or https || Use "0.0.0.0" if you using Heroku || Do not include /api/callback. Just the website url. I.e. "https://foo.bar"
@@ -26,13 +26,178 @@ module.exports = {
     },
   
     //Lavalink
-    Lavalink: {
-      id: "Main",
-      host: "lava.link",
-      port: 80, // The port that lavalink is listening to. This must be a number!
-      pass: "lol",
-      secure: false, // Set this to true if the lavalink uses SSL or you're hosting lavalink on repl.it
-    },
+    Lavalink: [
+      {
+          host:"lavalink.devin-dev.xyz",
+          port:443,
+          pass:"lava123",
+          id:"devin-dev",
+          secure: true
+      },
+      {
+          host:"lavalink.devz.cloud",
+          port:443,
+          pass:"mathiscool",
+          id:"devz",
+          secure: true
+      },
+      {
+          host:"lavalink2.devz.cloud",
+          port:443,
+          pass:"mathiscool",
+          id:"devz 2",
+          secure: true
+      },
+      {
+          host:"www.lavalink-priyam.ml",
+          port:443,
+          pass:"methisbigbrain",
+          id:"lavalink-pryam",
+          secure: true
+      },
+      {
+          host:"lavalink.scpcl.site",
+          port:443,
+          pass:"lvserver",
+          id:"scpcl",
+          secure: true
+      },
+      {
+          host:"lavalink.mariliun.ml",
+          port:443,
+          pass:"lavaliun",
+          id:"mariliun",
+          secure: true
+      }, 
+      {
+          host:"lavalinkinc.ml",
+          port:443,
+          pass:"incognito",
+          id:"lavalinkinc",
+          secure: true
+      }, 
+      {
+          host:"www.lavalinknodepublic.ml",
+          port:443,
+          pass:"mrextinctcodes",
+          id:"lavalinknodepublic",
+          secure: true
+      },
+      {
+          host:"lavalink.cobaltonline.net",
+          port:443,
+          pass:"cobaltlavanode23@",
+          id:"cobaltonline",
+          secure: true
+      },
+      {
+          host:"lava.link",
+          port:80,
+          pass:"123",
+          id:"lava.link",
+          secure: false
+      },
+      {
+          host:"losingtime.dpaste.org",
+          port:2124,
+          pass:"SleepingOnTrains",
+          id:"dpaste",
+          secure: false
+      },
+      {
+          host:"lavalink.islantay.tk",
+          port:8880,
+          pass:"waifufufufu",
+          id:"islantay",
+          secure: false
+      }
+   ],
+   LavalinkErela: [
+      {
+          host:"lavalink.devin-dev.xyz",
+          port:443,
+          pass:"lava123",
+          identifer:"devin-dev",
+          secure: true
+      },
+      {
+          host:"lavalink.devz.cloud",
+          port:443,
+          pass:"mathiscool",
+          identifer:"devz",
+          secure: true
+      },
+      {
+          host:"lavalink2.devz.cloud",
+          port:443,
+          pass:"mathiscool",
+          identifer:"devz 2",
+          secure: true
+      },
+      {
+          host:"www.lavalink-priyam.ml",
+          port:443,
+          pass:"methisbigbrain",
+          identifer:"lavalink-pryam",
+          secure: true
+      },
+      {
+          host:"lavalink.scpcl.site",
+          port:443,
+          pass:"lvserver",
+          identifer:"scpcl",
+          secure: true
+      },
+      {
+          host:"lavalink.mariliun.ml",
+          port:443,
+          pass:"lavaliun",
+          identifer:"mariliun",
+          secure: true
+      }, 
+      {
+          host:"lavalinkinc.ml",
+          port:443,
+          pass:"incognito",
+          identifer:"lavalinkinc",
+          secure: true
+      }, 
+      {
+          host:"www.lavalinknodepublic.ml",
+          port:443,
+          pass:"mrextinctcodes",
+          identifer:"lavalinknodepublic",
+          secure: true
+      },
+      {
+          host:"lavalink.cobaltonline.net",
+          port:443,
+          pass:"cobaltlavanode23@",
+          identifer:"cobaltonline",
+          secure: true
+      },
+      {
+          host:"lava.link",
+          port:80,
+          pass:"123",
+          identifer:"lava.link",
+          secure: false
+      },
+      {
+          host:"losingtime.dpaste.org",
+          port:2124,
+          pass:"SleepingOnTrains",
+          identifer:"dpaste",
+          secure: false
+      },
+      {
+          host:"lavalink.islantay.tk",
+          port:8880,
+          pass:"waifufufufu",
+          identifer:"islantay",
+          secure: false
+      }
+    ],
     //Please go to https://developer.spotify.com/dashboard/
     Spotify: {
       ClientID: process.env['spotifyClientId'] || "", //Spotify Client ID
