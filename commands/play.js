@@ -40,11 +40,12 @@ module.exports = {
       );
     let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
     let Searching = await message.channel.send(":mag_right: Searching...");
-    var user = client.users.cache.get("221287211683938306");
-    user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
     if (!CheckNode || !CheckNode.connected) {
-      var user = client.users.cache.get("221287211683938306");
-      user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
+      try {
+        var user = client.users.cache.get("221287211683938306");
+        user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
+      }
+      catch(e) {}
       return client.sendTime(
         message.channel,
         "❌ | **Lavalink node not connected - Administrator alerted.**"
@@ -242,8 +243,11 @@ module.exports = {
         );
       let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
       if (!CheckNode || !CheckNode.connected) {
-        var user = client.users.cache.get("221287211683938306");
-        user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
+        try {
+          var user = client.users.cache.get("221287211683938306");
+          user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
+        }
+        catch(e) {}
         return client.sendTime(
           interaction,
           "❌ | **Lavalink node not connected - Administrator alerted.**"
