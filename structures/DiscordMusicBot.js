@@ -161,6 +161,7 @@ class DiscordMusicBot extends Client {
         var now = new Date();
         var hour = now.getUTCHours();
         var minute = now.getUTCMinutes();
+        console.log(now);
         this.SongsPlayed++;
         let TrackStartedEmbed = new MessageEmbed()
           .setAuthor(`Now playing ♪`, this.botconfig.IconURL)

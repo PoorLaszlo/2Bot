@@ -93,12 +93,12 @@ module.exports = {
     if (!CheckNode || !CheckNode.connected) {
       return client.sendTime(
         message.channel,
-        "Lavalink Status:" + "❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
+        "Lavalink Status:" + " ❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
       );
     } else {
       return client.sendTime(
         message.channel,
-        "Lavalink Status:" + "✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
+        "Lavalink Status:" + " ✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
       );
     }
   },
@@ -184,12 +184,12 @@ module.exports = {
       if (!CheckNode || !CheckNode.connected) {
         return client.sendTime(
           message.channel,
-          "Lavalink Status:" + "❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
+          "Lavalink Status:" + " ❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
         );
       } else {
         return client.sendTime(
           message.channel,
-          "Lavalink Status:" + "✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
+          "Lavalink Status:" + " ✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
         );
       }
     },
