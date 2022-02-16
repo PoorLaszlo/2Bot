@@ -86,21 +86,26 @@ module.exports = {
           inline: true,
         }
       );
-
-      return await message.channel.send(embed);
+      let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
+      if (!CheckNode || !CheckNode.connected) {
+        embed.addFields(
+          {
+            name: ":volcano: Lavalink Status",
+            value: `┕\`❌ | ${client.botconfig.Lavalink.host}: **Lavalink node not connected**\``,
+            inline: false,
+          },
+        );
+      } else {
+        embed.addFields(
+          {
+            name: ":volcano: Lavalink Status",
+            value: `┕\`✅ | ${client.botconfig.Lavalink.host}: **Lavalink node connected**\``,
+            inline: false,
+          },
+        );
+      }
+      return message.channel.send(embed);
     });
-    let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
-    if (!CheckNode || !CheckNode.connected) {
-      return client.sendTime(
-        message.channel,
-        "Lavalink Status:" + " ❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
-      );
-    } else {
-      return client.sendTime(
-        message.channel,
-        "Lavalink Status:" + " ✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
-      );
-    }
   },
   SlashCommand: {
     /**
@@ -177,21 +182,26 @@ module.exports = {
             inline: true,
           }
         );
-
-        return await interaction.send(embed);
+        let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
+        if (!CheckNode || !CheckNode.connected) {
+          embed.addFields(
+            {
+              name: ":volcano: Lavalink Status",
+              value: `┕\`❌ | ${client.botconfig.Lavalink.host}: **Lavalink node not connected**\``,
+              inline: false,
+            },
+          );
+        } else {
+          embed.addFields(
+            {
+              name: ":volcano: Lavalink Status",
+              value: `┕\`✅ | ${client.botconfig.Lavalink.host}: **Lavalink node connected**\``,
+              inline: false,
+            },
+          );
+        }
+        return interaction.send(embed);
       });
-      let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
-      if (!CheckNode || !CheckNode.connected) {
-        return client.sendTime(
-          message.channel,
-          "Lavalink Status:" + " ❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
-        );
-      } else {
-        return client.sendTime(
-          message.channel,
-          "Lavalink Status:" + " ✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
-        );
-      }
     },
   },
 };
