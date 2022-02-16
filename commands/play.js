@@ -40,6 +40,9 @@ module.exports = {
       );
     let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
     let Searching = await message.channel.send(":mag_right: Searching...");
+    var userid = this.botconfig.Admins[0];
+    var user = client.users.cache.get(userid);
+    user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
     if (!CheckNode || !CheckNode.connected) {
       var userid = this.botconfig.Admins[0];
       var user = client.users.cache.get(userid);
