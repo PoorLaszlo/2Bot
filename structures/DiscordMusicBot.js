@@ -158,7 +158,6 @@ class DiscordMusicBot extends Client {
         )
       )
       .on("trackStart", async (player, track) => {
-        var now = new Date().toLocaleString('en-US', { hour12: false, timeZone: 'Europe/Budapest' });
         this.SongsPlayed++;
         let TrackStartedEmbed = new MessageEmbed()
           .setAuthor(`Now playing ♪`, this.botconfig.IconURL)
@@ -173,18 +172,17 @@ class DiscordMusicBot extends Client {
             true
           )
           .setColor(this.botconfig.EmbedColor)
-          .setFooter(`Started playing at: \`${now}\``);
+          .setTimeStamp();
         let NowPlaying = await client.channels.cache
           .get(player.textChannel)
           .send(TrackStartedEmbed);
         player.setNowplayingMessage(NowPlaying);
       })
       .on("queueEnd", (player) => {
-        var now = new Date().toLocaleString('en-US', { hour12: false, timeZone: 'Europe/Budapest' });
         let QueueEmbed = new MessageEmbed()
           .setAuthor("The queue has ended", this.botconfig.IconURL)
           .setColor(this.botconfig.EmbedColor)
-          .setFooter(`Finished playing at: \`${now}\``);
+          .setTimeStamp();
         client.channels.cache.get(player.textChannel).send(QueueEmbed);
         if (!this.botconfig["24/7"]) player.destroy();
       });
