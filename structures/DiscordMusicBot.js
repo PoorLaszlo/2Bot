@@ -174,8 +174,8 @@ class DiscordMusicBot extends Client {
             })}\``,
             true
           )
-          .setColor(this.botconfig.EmbedColor);
-          //.setFooter("Started playing at: ", hour, " : ", minute);
+          .setColor(this.botconfig.EmbedColor)
+          .setFooter(`Started playing at: ${hour} : ${minute}`);
         let NowPlaying = await client.channels.cache
           .get(player.textChannel)
           .send(TrackStartedEmbed);
