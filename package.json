@@ -1,6 +1,6 @@
 {
   "name": "discord-musicbot",
-  "version": "2022.02.16",
+  "version": "2022.02.17",
   "description": "Very simple discord bot with the discord.js with Song Name playing. It can able to play music with the song name",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,7 @@
     "erela.js-deezer": "^1.0.7",
     "erela.js-facebook": "^1.0.4",
     "express": "^4.17.1",
+    "express-rate-limit": "^6.2.0",
     "express-session": "^1.17.1",
     "jsoning": "^0.12.0",
     "lavasfy": "2.3.0",
