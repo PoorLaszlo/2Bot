@@ -7,7 +7,7 @@ const levels = {
   high: 0.35,
   coom: 0.5,
   extremecoom: 0.7,
-  coomheaven: 0.9,
+  coomheaven: 1.0,
 };
 module.exports = {
   name: "bassboost",
@@ -71,7 +71,7 @@ module.exports = {
     options: [
       {
         name: "level",
-        description: `Please provide a bassboost level. Available Levels: low, medium, high, coom, extremecoom, coomheaven or none`,
+        description: `Please provide a bassboost level.`,
         value: "[level]",
         type: 3,
         required: true,
@@ -93,7 +93,7 @@ module.exports = {
         high: 0.35,
         coom: 0.5,
         extremecoom: 0.7,
-        coomheaven: 0.9,
+        coomheaven: 1.0,
       };
 
       let player = await client.Manager.get(interaction.guild_id);
