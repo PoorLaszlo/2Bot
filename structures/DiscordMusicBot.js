@@ -172,7 +172,7 @@ class DiscordMusicBot extends Client {
             true
           )
           .setColor(this.botconfig.EmbedColor)
-          .setTimeStamp();
+          .setTimestamp();
         let NowPlaying = await client.channels.cache
           .get(player.textChannel)
           .send(TrackStartedEmbed);
@@ -182,7 +182,7 @@ class DiscordMusicBot extends Client {
         let QueueEmbed = new MessageEmbed()
           .setAuthor("The queue has ended", this.botconfig.IconURL)
           .setColor(this.botconfig.EmbedColor)
-          .setTimeStamp();
+          .setTimestamp();
         client.channels.cache.get(player.textChannel).send(QueueEmbed);
         if (!this.botconfig["24/7"]) player.destroy();
       });
