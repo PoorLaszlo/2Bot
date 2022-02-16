@@ -21,12 +21,19 @@ module.exports = {
     
     Presence: {
       status: "online", // You can show online, idle, and dnd
-      name: "!help for NISHIKIYAMA CRY SESSION", // The message shown
+      name: "!help for LAVALINK NODE NOT CONNECTED", // The message shown
       type: "PLAYING", // PLAYING, WATCHING, LISTENING, STREAMING
     },
   
     //Lavalink
-    Lavalink: [
+    Lavalink: {
+        host:"lava.link",
+        port:80,
+        pass:"123",
+        id:"lava.link",
+        secure: false
+    },
+    /*Lavalink: [
       {
           host:"lavalink.devin-dev.xyz",
           port:443,
@@ -197,7 +204,7 @@ module.exports = {
           identifer:"islantay",
           secure: false
       }
-    ],
+    ],*/
     //Please go to https://developer.spotify.com/dashboard/
     Spotify: {
       ClientID: process.env['spotifyClientId'] || "", //Spotify Client ID

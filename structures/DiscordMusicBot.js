@@ -111,8 +111,7 @@ class DiscordMusicBot extends Client {
 
     //because not worked lol ;-;
     const client = this;
-    const nodes = this.botconfig.Lavalink;
-    const nodesErela = this.botconfig.LavalinkErela;
+    const lavalink = this.botconfig.Lavalink;
     this.Lavasfy = new LavasfyClient(
       {
         clientID: this.botconfig.Spotify.ClientID,
@@ -122,11 +121,13 @@ class DiscordMusicBot extends Client {
         autoResolve: true,
         useSpotifyMetadata: true,
       },
-      [{host:"lavalink.scpcl.site",
-      port:443,
-      pass:"lvserver",
-      id:"scpcl",
-      secure: true,}],
+      [{
+        host: lavalink.host,
+        id: lavalink.id,
+        password: lavalink.id,
+        port: lavalink.port,
+        secure: lavalink.secure
+      }],
       
     );
 
@@ -136,11 +137,13 @@ class DiscordMusicBot extends Client {
         new apple(),
         new facebook(),
       ],
-      nodes: [{host:"lavalink.scpcl.site",
-      port:443,
-      pass:"lvserver",
-      identifier:"scpcl",
-      secure: true,}],
+      nodes: [{
+        host: lavalink.host,
+        identifier: lavalink.id,
+        password: lavalink.id,
+        port: lavalink.port,
+        secure: lavalink.secure
+      }],
       send(id, payload) {
         const guild = client.guilds.cache.get(id);
         if (guild) guild.shard.send(payload);

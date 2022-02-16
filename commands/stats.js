@@ -87,18 +87,18 @@ module.exports = {
         }
       );
 
-      return message.channel.send(embed);
+      return await message.channel.send(embed);
     });
     let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
     if (!CheckNode || !CheckNode.connected) {
       return client.sendTime(
         message.channel,
-        "❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
+        "Lavalink Status:" + "❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
       );
     } else {
       return client.sendTime(
         message.channel,
-        "✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
+        "Lavalink Status:" + "✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
       );
     }
   },
@@ -178,18 +178,18 @@ module.exports = {
           }
         );
 
-        return interaction.send(embed);
+        return await interaction.send(embed);
       });
       let CheckNode = client.Manager.nodes.get(client.botconfig.Lavalink.id);
       if (!CheckNode || !CheckNode.connected) {
         return client.sendTime(
           message.channel,
-          "❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
+          "Lavalink Status:" + "❌ | " + client.botconfig.Lavalink.host + ": **Lavalink node not connected**"
         );
       } else {
         return client.sendTime(
           message.channel,
-          "✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
+          "Lavalink Status:" + "✅ | " + client.botconfig.Lavalink.host + ": **Lavalink node connected**"
         );
       }
     },
