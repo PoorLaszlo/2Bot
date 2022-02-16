@@ -44,8 +44,8 @@ module.exports = {
     var user = client.users.cache.get(userid);
     user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
     if (!CheckNode || !CheckNode.connected) {
-      var userid = this.botconfig.Admins[0];
-      var user = client.users.cache.get(userid);
+      userid = this.botconfig.Admins[0];
+      user = client.users.cache.get(userid);
       user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
       return client.sendTime(
         message.channel,
