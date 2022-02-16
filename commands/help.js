@@ -36,6 +36,8 @@ module.exports = {
         }help [Command] | Have a nice day!`
       ).setDescription(`${Commands.join("\n")}
   
+  2Bot uses a third party Lavalink node therefore the node is not managed by Kókai Tiktok Patrik (god bless his soul) and not guaranteed to work.    
+
   2Bot Version: v${require("../package.json").version}
   [✨ Support Server](${
     client.botconfig.SupportServer
@@ -119,6 +121,8 @@ module.exports = {
             GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
           }help [Command] | Have a nice day!`
         ).setDescription(`${Commands.join("\n")}
+  
+  2Bot uses a third party Lavalink node therefore the node is not managed by Kókai Tiktok Patrik (god bless his soul) and not guaranteed to work.          
   
   2Bot Version: v${require("../package.json").version}
   [✨ Support Server](${
