@@ -98,7 +98,7 @@ module.exports = {
         embed.addFields(
           {
             name: ":question: Note",
-            value: `The administrator is automatically alerted if the lavalink node happens to be down.`,
+            value: "┕The administrator is automatically alerted if the lavalink node happens to be down.",
             inline: false,
           },
         );
@@ -201,7 +201,7 @@ module.exports = {
           embed.addFields(
             {
               name: ":question: Note",
-              value: `The administrator is automatically alerted if the lavalink node happens to be down.`,
+              value: "┕The administrator is automatically alerted if the lavalink node happens to be down.",
               inline: false,
             },
           );

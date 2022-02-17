@@ -122,10 +122,10 @@ class DiscordMusicBot extends Client {
         useSpotifyMetadata: true,
       },
       [{
-        host: lavalink.host,
         id: lavalink.id,
-        password: lavalink.id,
+        host: lavalink.host,
         port: lavalink.port,
+        password: lavalink.id,
         secure: lavalink.secure
       }],
       
@@ -138,10 +138,10 @@ class DiscordMusicBot extends Client {
         new facebook(),
       ],
       nodes: [{
-        host: lavalink.host,
         identifier: lavalink.id,
-        password: lavalink.id,
+        host: lavalink.host,
         port: lavalink.port,
+        password: lavalink.id,
         secure: lavalink.secure
       }],
       send(id, payload) {
