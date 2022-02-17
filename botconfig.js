@@ -28,9 +28,9 @@ module.exports = {
     //Lavalink
     Lavalink: {
         id: "Main", //- Used for indentifier. You can set this to whatever you want.
-        host: "losingtime.dpaste.org", //- The host name or IP of the lavalink server.
-        port: 2124, // The port that lavalink is listening to. This must be a number!
-        pass: "SleepingOnTrains", //- The password of the lavalink server.
+        host: "lava.link", //- The host name or IP of the lavalink server.
+        port: 80, // The port that lavalink is listening to. This must be a number!
+        pass: "123", //- The password of the lavalink server.
         secure: false // Set this to true if the lavalink uses SSL. if not set it to false.
     },
     //Backup nodes:
