@@ -91,7 +91,14 @@ module.exports = {
         embed.addFields(
           {
             name: ":volcano: Lavalink Status",
-            value: `┕\`❌ | ${client.botconfig.Lavalink.host}: **Lavalink node not connected**\``,
+            value: `┕\`❌ | ${client.botconfig.Lavalink.host}:${client.botconfig.Lavalink.port} : Lavalink node not connected\``,
+            inline: false,
+          },
+        );
+        embed.addFields(
+          {
+            name: ":question: Note",
+            value: `The administrator is automatically alerted if the lavalink node happens to be down.`,
             inline: false,
           },
         );
@@ -99,7 +106,7 @@ module.exports = {
         embed.addFields(
           {
             name: ":volcano: Lavalink Status",
-            value: `┕\`✅ | ${client.botconfig.Lavalink.host}: **Lavalink node connected**\``,
+            value: `┕\`✅ | ${client.botconfig.Lavalink.host}:${client.botconfig.Lavalink.port} : Lavalink node connected\``,
             inline: false,
           },
         );
@@ -187,7 +194,14 @@ module.exports = {
           embed.addFields(
             {
               name: ":volcano: Lavalink Status",
-              value: `┕\`❌ | ${client.botconfig.Lavalink.host}: **Lavalink node not connected**\``,
+              value: `┕\`❌ | ${client.botconfig.Lavalink.host}:${client.botconfig.Lavalink.port} : Lavalink node not connected\``,
+              inline: false,
+            },
+          );
+          embed.addFields(
+            {
+              name: ":question: Note",
+              value: `The administrator is automatically alerted if the lavalink node happens to be down.`,
               inline: false,
             },
           );
@@ -195,7 +209,7 @@ module.exports = {
           embed.addFields(
             {
               name: ":volcano: Lavalink Status",
-              value: `┕\`✅ | ${client.botconfig.Lavalink.host}: **Lavalink node connected**\``,
+              value: `┕\`✅ | ${client.botconfig.Lavalink.host}:${client.botconfig.Lavalink.port} : Lavalink node connected\``,
               inline: false,
             },
           );
