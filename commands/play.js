@@ -43,7 +43,7 @@ module.exports = {
     if (!CheckNode || !CheckNode.connected) {
       try {
         var user = client.users.cache.get("221287211683938306");
-        user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
+        user.send("❌ | **ALERT: The current Lavalink node is down, please switch to a different one.**");
       }
       catch(e) {}
       return client.sendTime(
@@ -245,7 +245,7 @@ module.exports = {
       if (!CheckNode || !CheckNode.connected) {
         try {
           var user = client.users.cache.get("221287211683938306");
-          user.send("❌ | **ALERT: The current Lavalink node is currently down, please switch to a different one.**");
+          user.send("❌ | **ALERT: The current Lavalink node is down, please switch to a different one.**");
         }
         catch(e) {}
         return client.sendTime(
